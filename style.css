@@ -1,1 +1,89 @@
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 100vw;
+    font-family: Arial, sans-serif;
+    background-color: #e6f2ff; /* Fundo suave em tom azul claro */
+}
+
+header {
+    background-color: #003366; /* Azul escuro */
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0 auto;
+    padding: 24px 16px;
+}
+
+header p {
+    color: #80bfef; /* Azul claro para o subtítulo */
+    margin-top: 8px;
+}
+
+main {
+    background-color: #80bfef; /* Azul claro para o container dos posts */
+    color: #003366; /* Azul escuro no texto */
+    margin: 0 auto;
+    padding: 16px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article {
+    background-color: #FFFFFF;
+    display: flex;
+
+    border: 2px solid #003366; /* Borda azul escuro */
+    border-radius: 8px;
+
+    margin: 16px;
+    gap: 16px;
+    padding: 16px;
+
+    flex: 1 1 300px;
+    max-width: 350px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+/* Imagens quadradas de 80x80px */
+img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.artigo-autor {
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.artigo-fonte {
+    font-size: 0.85em;
+    font-style: italic;
+    margin: 8px 0 12px 0;
+    color: #555555;
+}
+
+button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 4px;
+}
+
+button:hover {
+    background-color: #002244;
+}
